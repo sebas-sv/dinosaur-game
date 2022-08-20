@@ -2,7 +2,7 @@
 
 ## Contents
 
-- [Demo](https://dino-sebas-sv.netlify.app/)
+- [Demo](https://sebas-sv.github.io/dinosaur-game/)
 - [Description](#description)
 - [Requirements](#requirements)
 - [Usage](#usage)
