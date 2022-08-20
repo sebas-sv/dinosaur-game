@@ -64,7 +64,9 @@ function Start() {
     container = document.querySelector(".container");
     textScore = document.querySelector(".score");
     dino = document.querySelector(".dino");
-    document.addEventListener("keydown", HandleKeyDown);
+    document.addEventListener("keydown", HandleKeyJump);
+    document.addEventListener("touchstart", HandleKeyJump);
+
 }
 
 function Update() {
@@ -81,8 +83,8 @@ function Update() {
     velY -= gravity * deltaTime;
 }
 
-function HandleKeyDown(ev) {
-    if (ev.keyCode == 32) {
+function HandleKeyJump(ev) {
+    if (ev.keyCode == 32 || ev.type == "touchstart") {
         jump();
     }
 }
